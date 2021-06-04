@@ -261,7 +261,6 @@ textarea {
   }
 }
 
-@cool-blue:cyan;
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -294,13 +293,13 @@ textarea {
   -webkit-box-shadow: inset 120px 120px 124px #0000001A;
 }
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 76px @cool-blue;
+  -webkit-box-shadow: inset 0 0 76px @mainCol4;
 }
 ::-khtml-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 76px @cool-blue;
+  -webkit-box-shadow: inset 0 0 76px @mainCol4;
 }
 ::-moz-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 76px @cool-blue;
+  -webkit-box-shadow: inset 0 0 76px @mainCol4;
 }
 
 // colors
@@ -359,7 +358,7 @@ a img {
 }
 // sections
 .container-fluid {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'futura-book';
   padding: 6vw 20vw;
 
   .content-box {
@@ -729,7 +728,7 @@ a img {
     position: relative;
     z-index: 1;
     background:transparent;
-    padding: 4vw 5vw;
+    padding: 0 5vw 4vw 5vw;
     text-align:left;
 
 
@@ -768,6 +767,285 @@ a img {
       span {
         border:2px solid #012538;
         color:@mainCol2;
+        padding: 1vw;
+        background:#044a71;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: #044a71 url('../img/btn-2-white.png') no-repeat center center;
+      }
+    }
+
+    &.dark-blue {
+
+    }
+  }
+}
+#section7 {
+  padding: 10vw 16vw;
+  position: relative;
+  overflow: hidden;
+  background: url('../img/bg-4.jpg') no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+
+  .content-box {
+    position: relative;
+    z-index: 1;
+    background:#05577b;
+    padding: 4vw 5vw;
+    text-align:left;
+
+    h1 {
+      color:#b8d9eb;
+      text-align:center;
+
+      span {
+        color:#05577b;
+        background: #b8d9eb;
+      }
+    }
+    h4, p, a {
+      color:#b8d9eb;
+    }
+    p {
+
+      &.align-centre {
+        text-align:center;
+      }
+      &.align-right {
+        text-align:right;
+      }
+      &.caption {
+        font-weight:600;
+        color:#ffffff;
+        margin-bottom: 3vw;
+      }
+    }
+    .big-link {
+      font-size:22px; line-height:32px;
+      text-align:center;
+      text-decoration: underline;
+      display:block;
+    }
+    h4 {
+      margin:3vw 0;
+    }
+    img {
+      margin-bottom:3vw;
+      width:100%;
+
+      &.centred {
+        width: auto;
+        margin: 2vw auto;
+        display: block;
+      }
+    }
+    .imagebox {
+      display:flex;
+      margin:3vw 0 0 0;
+    }
+    .imageholder {
+      display: flex;
+      align-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .news {
+      margin: 2vw -3vw ;
+
+      p {
+        font-size:18px;
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+
+      }
+      a {
+        color:#01b4ff;
+        text-align:right;
+        display: block;
+        margin: 2vw 0;
+      }
+      img {
+        margin: 0;
+        width:auto; height:auto;
+      }
+      .info {
+        border-bottom:3px solid @mainCol3;
+        padding-left: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+
+        &.single {
+          display: flex;
+        }
+
+        &.left-aligned {
+          padding-left: 0;
+          padding-right: 2vw;
+        }
+      }
+    }
+    video {
+      width:100%;
+    }
+  }
+  .cta-box {
+    display: flex;
+    justify-content: center;
+    //margin-left: -0.5vw;
+    margin-top:3vw;
+
+    &.middle {
+      margin-bottom:10vw;
+    }
+
+    a, a span {
+      text-decoration:none;
+      color:@mainCol3;
+      font-size:12px !important;
+      line-height: 22px;
+      text-transform:uppercase;
+    }
+    .link1,.link2 {
+      display: flex;
+
+      &:after {
+        content:'';
+        display:inline-block;
+        border:2px solid @mainCol3;
+        width: 70px;
+        height: 100%;
+
+        border-left:0;
+      }
+    }
+    .link1 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid @mainCol3;
+        padding: 1vw;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: url('../img/btn-1.png') no-repeat center center;
+      }
+    }
+    .link2 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid #05577b;
+        padding: 1vw;
+        background:#000000;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: #000000 url('../img/btn-2-white.png') no-repeat center center;
+        border: 2px solid #05577b;
+      }
+    }
+
+    &.dark-blue {
+
+    }
+  }
+}
+#section8 {
+  padding: 10vw 0;
+  position: relative;
+  overflow: hidden;
+  background: url('../img/bg-5.jpg') no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+
+  .content-box {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    padding: 0;
+    text-align:left;
+
+    &.info {
+      padding: 0 2vw 0 0;
+    }
+    &.image-right {
+      padding: 2vw 0vw;
+    }
+    h1 {
+      color:#ffffff;
+      text-transform:uppercase;
+      span {
+        background:#ffffff;
+        color:#000000;
+      }
+    }
+    h4, p, a {
+      color:@mainCol3;
+    }
+    a {
+
+    }
+    h4 {
+      margin:3vw 0;
+    }
+  }
+  .drop {
+    margin-top:7vw;
+    width: 100%;
+  }
+  .cta-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -0.5vw;
+    margin-top:3vw;
+
+    a, a span {
+      text-decoration:none;
+      color:@mainCol3;
+      font-size:12px !important;
+      line-height: 22px;
+      text-transform:uppercase;
+    }
+    .link1,.link2 {
+      display: flex;
+
+      &:after {
+        content:'';
+        display:inline-block;
+        border:2px solid @mainCol3;
+        width: 70px;
+        height: 100%;
+
+        border-left:0;
+      }
+    }
+    .link1 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid @mainCol3;
+        padding: 1vw;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: url('../img/btn-1.png') no-repeat center center;
+      }
+    }
+    .link2 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid @mainCol3;
         padding: 1vw;
         background:#044a71;
       }
