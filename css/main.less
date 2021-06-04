@@ -476,6 +476,64 @@ a img {
   background: url('../img/bg-5.jpg') no-repeat center center;
   background-size:cover;
   padding: 0 16vw;
+
+  .content-box {
+    position: relative;
+    z-index: 1;
+    background:@mainCol2;
+    padding: 4vw 5vw;
+    text-align: right;
+
+    #menu {
+      text-align: right;
+      overflow:hidden;
+    }
+    h1 {
+      margin-bottom:1vw;
+      background: #044a71;
+      color:#b8d9eb;
+      padding: 0.8vw;
+      font-size: 2vw; line-height: 2.4vw;
+      display: inline-block;
+      text-align: right;
+
+
+      span {
+        background: #b8d9eb;
+        padding: 0.4vw;
+      }
+    }
+    h4 {
+      margin: 1.5vw 0;
+      font-weight:600;
+    }
+    h4, p, a {
+
+      color:#044a71;
+    }
+    a {
+
+    }
+    h2 {
+      margin:3vw 0;
+    }
+    ul {
+      text-align:right;
+      li {
+      list-style: none;
+        margin-bottom:1.2vw;
+        a {
+
+          span {
+            background: #044a71;
+            padding: 0.4vw;
+            color:#b8d9eb;
+          }
+        }
+      }
+    }
+
+  }
 }
 #section3 {
   padding: 10vw 16vw;
@@ -1015,13 +1073,15 @@ a img {
   }
   .stats {
     display:flex;
-    margin-bottom:2vw;
+    margin:2vw 0;
 
     h5 {
       color:@mainCol3;
       text-transform:uppercase;
       margin-right: 2vw;
-
+      b {
+        color:#b8d9eb;
+      }
       &:last-of-type {
         margin-right:0;
       }
@@ -1030,6 +1090,149 @@ a img {
   .drop {
     margin-top:7vw;
     width: 100%;
+  }
+  .cta-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -0.5vw;
+    margin-top:3vw;
+
+    a, a span {
+      text-decoration:none;
+      color:@mainCol3;
+      font-size:12px !important;
+      line-height: 22px;
+      text-transform:uppercase;
+    }
+    .link1,.link2 {
+      display: flex;
+
+      &:after {
+        content:'';
+        display:inline-block;
+        border:2px solid @mainCol3;
+        width: 70px;
+        height: 100%;
+
+        border-left:0;
+      }
+    }
+    .link1 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid @mainCol3;
+        padding: 1vw;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: url('../img/btn-1.png') no-repeat center center;
+      }
+    }
+    .link2 {
+      padding:0.5vw;
+
+      span {
+        border:2px solid @mainCol4;
+        padding: 1vw;
+        color:@mainCol4;
+        background:#b8d9eb;
+      }
+      &:after {
+        content:'';
+        display:inline-block;
+        background: #b8d9eb url('../img/btn-2.png') no-repeat center center;
+        border:2px solid @mainCol4;
+      }
+    }
+
+    &.dark-blue {
+
+    }
+  }
+}
+#section9 {
+  padding: 10vw;
+  position: relative;
+  overflow: hidden;
+  background: url('../img/bg-6.jpg') no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+
+  .banner {
+    width:92%;
+    margin-top: 4vw;
+  }
+  .content-box {
+    position: relative;
+    z-index: 1;
+    background:@mainCol4;
+    padding: 2vw 2vw;
+    text-align:left;
+
+    &.image-right {
+      padding: 2vw 0vw;
+    }
+    h1 {
+      color:@mainCol3;
+      text-transform:uppercase;
+      margin: 1.5vw 0;
+
+      span {
+        background:@mainCol3;
+        color:#000000;
+      }
+    }
+    h6 {
+      color:@mainCol3;
+      margin: 1.5vw 0 3vw 0;
+    }
+    h4, p, a {
+      color:@mainCol3;
+    }
+    a {
+
+    }
+    h4 {
+      margin:3vw 0;
+    }
+  }
+  .awards {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .award {
+      margin-right:2vw;
+      width: 25%;
+      position: relative;
+      min-height: 15vw;
+
+      img {
+        margin:0 auto;
+        display: block;
+      }
+      p {
+        margin: 1vw 0;
+        font-size: 9px;
+        line-height: 12px;
+        padding: 1.2vw 1vw;
+        border:2px solid @mainCol3;
+        text-align:center;
+        vertical-align: center;
+        min-height: 7vw;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      &:last-of-type {
+        margin-right:0;
+      }
+    }
+
   }
   .cta-box {
     display: flex;
@@ -1090,32 +1293,46 @@ a img {
     }
   }
 }
-#section9 {
-  padding: 10vw 16vw;
+#section10 {
+  padding: 10vw 2vw 10vw 10vw;
   position: relative;
   overflow: hidden;
-  background: url('../img/bg-6.jpg') no-repeat center center;
+  background: url('../img/bg-3.jpg') no-repeat center center;
   background-size:cover;
   background-attachment: fixed;
 
   .content-box {
     position: relative;
     z-index: 1;
-    background:@mainCol4;
-    padding: 2vw 2vw;
+    background:transparent;
+    padding: 0 5vw 4vw 5vw;
     text-align:left;
 
-    &.image-right {
-      padding: 2vw 0vw;
+
+    h1 {
+      margin-bottom:2vw;
+      b {
+        font-size: 2vw; line-height: 2.4vw;
+      }
+      span {
+        background: #b8d9eb;
+        padding: 0.4vw;
+      }
+    }
+    img {
+      width:100%;
     }
     h4, p, a {
-      color:@mainCol3;
+      color:#044a71;
     }
     a {
 
     }
     h4 {
       margin:3vw 0;
+    }
+    &:last-of-type {
+      padding: 0;
     }
   }
   .cta-box {
@@ -1124,44 +1341,13 @@ a img {
     margin-left: -0.5vw;
     margin-top:3vw;
 
-    a, a span {
-      text-decoration:none;
-      color:@mainCol3;
-      font-size:12px !important;
-      line-height: 22px;
-      text-transform:uppercase;
-    }
-    .link1,.link2 {
-      display: flex;
 
-      &:after {
-        content:'';
-        display:inline-block;
-        border:2px solid @mainCol3;
-        width: 70px;
-        height: 100%;
-
-        border-left:0;
-      }
-    }
-    .link1 {
-      padding:0.5vw;
-
-      span {
-        border:2px solid @mainCol3;
-        padding: 1vw;
-      }
-      &:after {
-        content:'';
-        display:inline-block;
-        background: url('../img/btn-1.png') no-repeat center center;
-      }
-    }
     .link2 {
       padding:0.5vw;
 
       span {
-        border:2px solid @mainCol3;
+        border:2px solid #012538;
+        color:@mainCol2;
         padding: 1vw;
         background:#044a71;
       }
