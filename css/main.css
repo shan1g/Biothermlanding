@@ -321,6 +321,148 @@ a img {
   position: relative;
   z-index: 1;
 }
+.bio-modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  opacity: 0;
+  -webkit-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -khtml-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -moz-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  will-change: opacity;
+}
+.bio-modal h1 {
+  font-family: 'dinpro-bold';
+  text-transform: none;
+}
+.bio-modal video {
+  width: 100%;
+}
+.bio-modal .overlay {
+  background: #012538;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -khtml-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -moz-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  will-change: opacity;
+}
+.bio-modal sup {
+  font-size: 60%;
+}
+.bio-modal .modal-info {
+  max-width: 60vw;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  margin: 0 auto;
+}
+.bio-modal .modal-info .close-btn {
+  position: absolute;
+  top: -0.5vw;
+  right: -0.5vw;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  *cursor: hand;
+  background: #012538;
+  z-index: 9;
+  will-change: transform;
+  transform: scale(0);
+  -webkit-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.5s;
+  -khtml-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.5s;
+  -moz-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.5s;
+  transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.5s;
+}
+.bio-modal .modal-info .close-btn:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  right: 0;
+  top: 0;
+  display: block;
+  background: url('../img/icn-close.svg') no-repeat 0 0;
+  background-size: 100%;
+  -webkit-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -khtml-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  -moz-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+  transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.4s;
+}
+.bio-modal .modal-info .close-btn:hover:after {
+  transform: scale(0.8);
+}
+.bio-modal .modal-info article {
+  background: #ffffff;
+  width: 100%;
+  padding: 4vw !important;
+  margin: 0 !important;
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: scale(0.2);
+  -webkit-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.8s;
+  -khtml-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.8s;
+  -moz-transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.8s;
+  transition: all cubic-bezier(0.34, 0.57, 0.21, 0.99) 0.8s;
+  -webkit-transform: translateY(-10vh) scale(0.2);
+  -khtml-transform: translateY(-10vh) scale(0.2);
+  -moz-transform: translateY(-10vh) scale(0.2);
+  -ms-transform: translateY(-10vh) scale(0.2);
+  -o-transform: translateY(-10vh) scale(0.2);
+  transform: translateY(-10vh) scale(0.2);
+}
+.bio-modal.active {
+  opacity: 1;
+  z-index: 99;
+}
+.bio-modal.active .overlay {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.bio-modal.active .close-btn {
+  transition-delay: 1.3s;
+  transform: scale(1);
+}
+.bio-modal.active article {
+  transition-delay: 0.6s;
+  opacity: 1;
+  -webkit-transform: translateX(0px) translateY(0px) scale(1);
+  -khtml-transform: translateX(0px) translateY(0px) scale(1);
+  -moz-transform: translateX(0px) translateY(0px) scale(1);
+  -ms-transform: translateX(0px) translateY(0px) scale(1);
+  -o-transform: translateX(0px) translateY(0px) scale(1);
+  transform: translateX(0px) translateY(0px) scale(1);
+}
+@media screen and (min-width: 1441px) and (max-width: 1520px) {
+  .bio-modal .modal-info {
+    max-width: 61vw;
+  }
+  .bio-modal .modal-info article.search .search-panel .search-criteria .search-detail label {
+    padding: 10px 1vw 5px 0;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .bio-modal .modal-info {
+    max-width: 80vw;
+  }
+  .bio-modal .modal-info .close-btn {
+    top: -2.5vw;
+    right: -2.5vw;
+  }
+}
 .cta-box {
   display: flex;
   justify-content: center;
