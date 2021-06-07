@@ -1,6 +1,13 @@
-@media screen and (min-width: 1441px) and (max-width: 1680px) {
+@media screen and (min-width: 768px) and (max-width: 4000px) {
 
+  #section7 {
 
+    .content-box {
+      .hide-desktop {
+        display:none ;
+      }
+    }
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1520px) {
   #intro {
@@ -572,6 +579,13 @@
 
     .content-box {
 
+      .show-mobile {
+        display: flex;
+      }
+      .hide-mobile {
+        display:none !important
+      }
+
       .imagebox {
         margin: 8vw auto;
         width: 80%;
@@ -623,6 +637,12 @@
 
         .info {
           padding-left: 0;
+
+          &.single {
+            display:block;
+          }
+
+
 
           &.left-aligned {
             padding-left: 0;

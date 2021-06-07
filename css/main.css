@@ -1527,6 +1527,11 @@ a img {
   display: inline-block;
   background: #044a71 url('../img/btn-2-white.png') no-repeat center center;
 }
+@media screen and (min-width: 768px) and (max-width: 4000px) {
+  #section7 .content-box .hide-desktop {
+    display: none ;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1520px) {
   #intro {
     padding: 4vw 10vw;
@@ -1983,6 +1988,12 @@ a img {
   #section7 {
     padding: 5vw;
   }
+  #section7 .content-box .show-mobile {
+    display: flex;
+  }
+  #section7 .content-box .hide-mobile {
+    display: none !important;
+  }
   #section7 .content-box .imagebox {
     margin: 8vw auto;
     width: 80%;
@@ -2022,6 +2033,9 @@ a img {
   }
   #section7 .content-box .news .info {
     padding-left: 0;
+  }
+  #section7 .content-box .news .info.single {
+    display: block;
   }
   #section7 .content-box .news .info.left-aligned {
     padding-left: 0;
