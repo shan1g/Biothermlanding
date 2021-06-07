@@ -1584,6 +1584,24 @@ a img {
   #section7 .content-box .imagebox img {
     width: 33.33%;
   }
+  #section7 .content-box .imageholder:after {
+    top: 2%;
+    left: 12%;
+    width: 76%;
+    height: 97%;
+  }
+  #section7 .content-box .imageholder.second:after {
+    top: 2%;
+    left: 12%;
+    width: 76%;
+    height: 96%;
+  }
+  #section7 .content-box .imageholder.third:after {
+    top: 7%;
+    left: 12%;
+    width: 76%;
+    height: 86%;
+  }
   #section8 .imageholder img {
     width: 100%;
   }

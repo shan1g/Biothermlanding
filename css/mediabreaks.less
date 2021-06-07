@@ -65,15 +65,46 @@
   #section7 {
     padding: 10vw 10vw;
 
-    .content-box .imagebox {
-      margin: 3vw auto 0 auto;
-      width: 90%;
-      justify-content: center;
+    .content-box {
 
-      img {
-        width:33.33%;
+      .imagebox {
+        margin: 3vw auto 0 auto;
+        width: 90%;
+        justify-content: center;
+
+        img {
+          width:33.33%;
+        }
+
       }
+      .imageholder {
 
+        &:after {
+          top: 2%;
+          left: 12%;
+          width: 76%;
+          height: 97%;
+        }
+
+        &.second {
+
+          &:after {
+            top: 2%;
+            left: 12%;
+            width: 76%;
+            height: 96%;
+          }
+        }
+        &.third {
+
+          &:after {
+            top: 7%;
+            left: 12%;
+            width: 76%;
+            height: 86%;
+          }
+        }
+      }
     }
   }
   #section8 {
