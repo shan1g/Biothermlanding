@@ -1373,6 +1373,7 @@ a img {
 #section9 .content-box h6 {
   color: #9dbfd0;
   margin: 1.5vw 0 3vw 0;
+  max-width: 80%;
 }
 #section9 .content-box h4,
 #section9 .content-box p,
