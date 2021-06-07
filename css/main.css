@@ -1875,7 +1875,7 @@ a img {
     padding-left: 0 !important;
     padding-right: 0 !important;
     left: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 15vw;
     width: 100%;
     left: 0 !important;
   }
@@ -2099,6 +2099,8 @@ a img {
   }
   #section9 .content-box .content-box h6 {
     margin: 6vw 0;
+    font-size: 4vw;
+    line-height: 6vw;
   }
   #section9 .content-box .content-box a.mlink {
     max-width: 70%;
