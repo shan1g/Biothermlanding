@@ -54,8 +54,12 @@
 
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/zDUq4hT7PVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-	<video data-src="video/loop.mp4" playsinline="1" muted="1" loop="1" autoplay class="bg-video"
-				 src="video/loop.mp4"></video>
+	<video preload="yes" autoplay loop width="100%" height="auto" playsinline muted="1" controls="1" class="bg-video">
+		<source src="video/loop.m4v" type="video/mp4">
+		<source src="video/loop.mp4" type="video/mp4">
+	</video>
+<!--	<video data-src="video/loop.mp4" playsinline="1" muted="1" loop="1" autoplay class="bg-video"-->
+<!--				 src="video/loop.mp4"></video>-->
 </article>
 
 <article class="container-fluid" id="section2">
